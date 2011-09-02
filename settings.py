@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # The IRC nickname and password to connect and identify with
-NICKNAME = 'momobot_test'
+NICKNAME = 'momobot_jsl'
 PASSWORD = ''
 
 # The IRC server and port to connect to
@@ -9,7 +9,7 @@ SERVER = 'irc.rizon.net'
 PORT = 6667
 
 # The channel to join
-CHANNEL = '#momotest'
+CHANNEL = '#op9'
 
 # A list of command indicators
 COMMAND_INDICATORS = ['!', '.', 'momo, ']
@@ -20,4 +20,4 @@ COMMAND_DELAY = 0.3
 # The IRC VERSION reply
 CTCP_VERSION = 'Momobot v0.1a'
 
-SELFDESTRUCT_USERS = ['Randomskk', 'redd', 'Xaiter']
+SELFDESTRUCT_USERS = ['Randomskk', 'redd', 'Xaiter', 'jsl']

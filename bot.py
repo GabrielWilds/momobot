@@ -64,6 +64,9 @@ class Bot:
             self.commands[command_name] = command
         else:
             raise CommandError
+            
+    def unregister_command(self, command):
+            del self.commands[command]
 
     def say(self, message, channel=''):
         self.__queue.addSayMessage(message, channel)
