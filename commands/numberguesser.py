@@ -29,7 +29,7 @@ class Numberguesser:
             self.bot.say("Number Guesser. We have generated a number between 1 and 10. Guess the right value.", data['channel'])
             self.bot.say("Say !guess [number] to make a guess. You have three guesses.", data['channel'])    
         else:
-            self.bot.say("There is currently a game active. Either finish that game, or quit the session with !quitguesser", data['channel'])
+            self.bot.say("There is currently a game active. Either finish that game, or quit the session with !quit", data['channel'])
             
     def numer_guesser(self, data):
         if self.game_active == False:
@@ -41,7 +41,8 @@ class Numberguesser:
             self.bot.say("Number Guesser. We have generated a number between 1 and 10. Guess the right value.", data['channel'])
             self.bot.say("Say !guess [number] to make a guess. You have three guesses.", data['channel'])    
         else:
-            self.bot.say("There is currently a game active. Either finish that game, or quit the session with !quitguesser", data['channel'])
+            self.bot.register_command('quit', self.quit)
+            self.bot.say("There is currently a game active. Either finish that game, or quit the session with !quit", data['channel'])
       
     def guess(self, data):
         if not data['message'].isdigit():
